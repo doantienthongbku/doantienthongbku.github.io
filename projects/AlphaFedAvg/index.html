@@ -1,0 +1,89 @@
+<!doctype html>
+<title>Rethinking Aggregation: Federated Learning with the Imbalance in Data Size among Clients</title>
+    <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <!-- page-header-->
+    <div class="jumbotron" style="background-color:#ffffff;">
+        <div class="container" style="font-family:'Times New Roman',serif;margin-bottom:-35px;margin-top:-20px">
+            <h1 class="display-1" style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;">
+                Rethinking Aggregation: Federated Learning with the Imbalance in Data Size among Clients</h1>
+            <hr style="border-top: 1px solid #000000; background: transparent;" class="my-4">
+            
+            <p class="lead" style="text-align:center;font-size:1.25em;">
+                <a href="https://hosytuyen.github.io" font color="#ffffff">Sy-Tuyen Ho</a> |
+                <a href="https://sites.google.com/site/mancheung0407/">Ngai-Man Cheung</a> </br>
+            Singapore University of Technology and Design (SUTD)<br/>
+            <em>RCV@ECCV 2022</br></em>
+            </p>
+                
+                
+            <p class="lead" style="text-align:center;font-size:1.25em;"> 
+                <a href="https://drive.google.com/file/d/1Q2OnAE_bzWVeqcn0s1jtqZycWFgh5YbP/view">Paper</a> 
+            </p>         
+                
+        </div>
+    </div>
+
+
+    
+    <!-- Abstract -->
+    <div class="container" style="font-family:'Times New Roman',serif">
+        <h2 class="display-1" style="text-align:center; font-weight:bold; font-size:1.5em;letter-spacing:2.0px;">Abstract</h2>
+        <hr style="border-top: 1px solid #000000; background: transparent;" class="my-4">
+            <p class="lead" style="text-align:left;font-size:1.25em;">
+                Federated Learning (FL) allows training a global model without accessing clients' data to protect privacy. Since the introduction of Federated Averaging (FedAvg), a common belief till now is that FL aggregation weights clients by their number of data points. Opposite to this, we find that uniform aggregation strongly outperforms the weighted aggregation under the setting of heterogeneity in data sizes among clients posed in the scenario of non-IID data. Based on our findings, we further introduce a simple yet effective aggregation, namely α-FL, to improve the performance of uniform aggregation with no additionally provided information compared to FedAvg. That means α-FL can be easily incorporated into other proposed FL methods to solve particular FL problems. Our extensive experimentation shows the superiority of the α-FL aggregation over  the usual FedAvg aggregation by 9.45% on CIFAR-10 under a highly skewed non-IID data setting. 
+            </p>
+
+    </div>
+
+    <!-- Method -->
+
+    <div class="container" style="font-family:'Times New Roman',serif">
+        <figure>                
+            <div class="col-md-12 text-center">
+                <img src="./assets/images/large_scale.png" alt="Inverted examples" style="width:100%;height:100%;">
+            </div>
+        
+        </figure>
+    </div>
+
+
+    </br>
+
+
+    <!-- Citation -->
+    <div class="container" style="font-family:'Times New Roman',serif">
+        <h2 class="display-1" style="text-align:center; font-weight:bold; font-size:1.5em;letter-spacing:2.0px;">Citation</h2>
+        <hr style="border-top: 1px solid #000000; background: transparent;" class="my-4">
+            
+        <pre class="lead" style="text-align:left;font-size:1.0em;white-space: pre-line;">
+            <code>@article{Ho_2022_RCV_ECCV,
+                author    = {Ho, Sy-Tuyen and Cheung, Ngai-Man},
+                title     = {Model Inversion Robustness: Can Transfer Learning Help?},
+                booktitle = {Responsible Computer Vision, ECCV 2022 Workshop},
+                month     = {October},
+                year      = {2022},
+            }
+}</code>
+        </pre>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
